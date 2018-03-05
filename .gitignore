@@ -59,6 +59,8 @@ ipch/
 *.opensdf
 *.sdf
 *.cachefile
+*.VC.db
+*.VC.opendb
 
 # Visual Studio profiler
 *.psess
@@ -115,6 +117,7 @@ publish/
 *.azurePubxml
 
 # NuGet Packages Directory
+packages/
 !packages/repositories.config
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
