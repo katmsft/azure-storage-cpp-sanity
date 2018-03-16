@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <was/storage_account.h>
 #include <was/blob.h>
+#include <was/table.h>
 #include <cpprest/filestream.h>  
 #include <cpprest/containerstream.h> 
 
@@ -11,6 +12,7 @@ std::wstring random_string(size_t length)
 {
     auto randchar = []() -> char
     {
+        srand(time(NULL));
         const char charset[] =
             "0123456789"
             "abcdefghijklmnopqrstuvwxyz";
